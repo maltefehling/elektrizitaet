@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontrolle E2 – Taschenlampe</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap">
+<h1>Kontrolle E2: Taschenlampe</h1>
+<p class="sub">Löse zuerst alles auf deiner OneNote-Seite. Gib dann hier deine Antworten ein. Falsches verbesserst du auf der Seite in Grün.</p>
+<div class="material"><img src="img/e2_taschenlampe.png" alt="Taschenlampe im Schnitt: 1 Gehäuse, 2 Feder, 3 Metallstreifen, 4 Schalterknopf, 5 Lämpchen" width="420"></div>
+<div id="aufgaben"></div><div id="uebersicht"></div></div>
+<script src="engine.js"></script><script>
+starte({titel:"Kontrolle E2 Taschenlampe",aufgaben:[
+ {id:"a",nr:"a)",typ:"offen",text:"Welchen Weg nimmt der Strom? Vergleiche mit deiner Zeichnung.",
+  loesung:"Vom Pluspol der vorderen Batterie in das Lämpchen (5), aus dem Lämpchen in den Metallstreifen (3), über den Schalter zur Feder (2), von der Feder in den Minuspol der hinteren Batterie – und durch beide Batterien zurück. Ein geschlossener Kreis."},
+ {id:"b",nr:"b)",typ:"tab",text:"Leiter oder Isolator?",spalten:["Leiter","Isolator"],
+  zeilen:[["1 Gehäuse",1],["2 Feder",0],["3 Metallstreifen",0],["4 Schalterknopf",1]],
+  tipp:"Leiter sind Metalle (und Graphit). Kunststoff ist ein Isolator."},
+ {id:"c",nr:"c)",typ:"mc",text:"Was macht der Schalter mit dem Stromkreis?",
+  opts:["Er öffnet und schließt den Stromkreis.","Er speichert Strom.","Er macht den Strom stärker."],richtig:0,
+  tipp:"Was passiert mit dem Kreis, wenn der Schalter auf AUS steht?",loesung:"Auf AUS ist der Kreis unterbrochen – die Lampe leuchtet nicht."},
+ {id:"d",nr:"d)",typ:"offen",text:"Ben sagt: „Der Strom kommt aus beiden Polen und trifft sich im Lämpchen.“ Hat Ben recht?",
+  loesung:"Ben hat nicht recht. Der Strom fließt im Kreis: aus einem Pol durch das Lämpchen zum anderen Pol zurück – er trifft sich nicht."},
+ {id:"e",nr:"e)",typ:"offen",text:"Die Taschenlampe leuchtet nicht, obwohl die Batterien neu sind. Zwei mögliche Gründe?",
+  loesung:"Zum Beispiel: Eine Batterie ist falsch herum eingelegt. Das Lämpchen ist durchgebrannt (Glühdraht gerissen). Ein Kontakt (Feder, Metallstreifen) berührt nicht. In jedem Fall ist der Stromkreis nicht richtig geschlossen."}
+]});
+</script></body></html>
