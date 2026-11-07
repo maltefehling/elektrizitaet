@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check-in Elektrizitätslehre</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap">
+<h1>Check-in: Elektrizitätslehre</h1>
+<p class="sub">Was kannst du schon aus früheren Einheiten? 10 kurze Aufgaben, ca. 10 Minuten. Es gibt keine Note – sei ehrlich zu dir.</p>
+<div id="aufgaben"></div><div id="uebersicht"></div></div>
+<script src="engine.js"></script><script>
+starte({titel:"Check-in Elektrizitätslehre",
+bereiche:[
+ {name:"Energie",wenn:"Lies vor der 5. Stunde den Merkkasten zur Energieumwandlung (Einheit Energie) noch einmal."},
+ {name:"Leistung",wenn:"Wiederhole vor der Leistungs-Stunde P = E : t und die Einheit Watt."},
+ {name:"Umstellen",wenn:"Schau dir vor der Widerstands-Stunde die Umstell-Animation an."},
+ {name:"Magnetismus",wenn:"Wiederhole Nord- und Südpol – das brauchst du beim Elektromagneten."},
+ {name:"Einheiten",wenn:"Übe mA ↔ A: 1 A = 1000 mA."}],
+aufgaben:[
+ {id:"e1",nr:"1",bereich:"Energie",typ:"mc",text:"Eine Lampe leuchtet. In welche Energieformen wandelt sie die elektrische Energie vor allem um?",
+  opts:["Licht und Wärme","Bewegungsenergie","Lageenergie"],richtig:0,tipp:"Fass eine Glühlampe nach einiger Zeit an (lieber nicht wirklich) …"},
+ {id:"e2",nr:"2",bereich:"Energie",typ:"mc",text:"Paul sagt: „Die Lampe verbraucht die Energie, danach ist sie weg.“",
+  opts:["stimmt","stimmt nicht"],richtig:1,tipp:"Energie geht nie verloren …",loesung:"Energie wird umgewandelt, nicht vernichtet."},
+ {id:"l1",nr:"3",bereich:"Leistung",typ:"mc",text:"Die Leistung P gibt an, …",
+  opts:["wie viel Energie pro Sekunde umgewandelt wird","wie viel Energie insgesamt umgewandelt wird","wie schnell sich etwas bewegt"],richtig:0,tipp:"Bei der Leistung spielt die Zeit eine Rolle."},
+ {id:"l2",nr:"4",bereich:"Leistung",typ:"zahl",text:"Ein Gerät wandelt in 10 s eine Energie von 500 J um. Wie groß ist seine Leistung?",
+  richtig:50,einheit:"W",tipp:"P = E : t"},
+ {id:"u1",nr:"5",bereich:"Umstellen",typ:"mc",text:"Stelle P = E : t nach E um.",opts:["E = P · t","E = P : t","E = t : P"],richtig:0,tipp:"Multipliziere beide Seiten mit t."},
+ {id:"u2",nr:"6",bereich:"Umstellen",typ:"mc",text:"Stelle E = P · t nach t um.",opts:["t = E · P","t = E : P","t = P : E"],richtig:1,tipp:"Teile beide Seiten durch P."},
+ {id:"m1",nr:"7",bereich:"Magnetismus",typ:"mc",text:"Zwei Nordpole von Magneten werden einander genähert. Sie …",opts:["ziehen sich an","stoßen sich ab","beeinflussen sich nicht"],richtig:1,tipp:"Gleiche Pole …"},
+ {id:"m2",nr:"8",bereich:"Magnetismus",typ:"mc",text:"Welcher Stoff wird von einem Magneten angezogen?",opts:["Kupfer","Eisen","Aluminium"],richtig:1,tipp:"Eine Büroklammer wird angezogen, eine Getränkedose nicht."},
+ {id:"z1",nr:"9",bereich:"Einheiten",typ:"zahl",text:"Rechne um: 0,25 A = ? mA",richtig:250,einheit:"mA",tipp:"1 A = 1000 mA"},
+ {id:"z2",nr:"10",bereich:"Einheiten",typ:"zahl",text:"Rechne um: 1500 mA = ? A",richtig:1.5,einheit:"A",tipp:"1000 mA = 1 A"}
+]});
+</script></body></html>

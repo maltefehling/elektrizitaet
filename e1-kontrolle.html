@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontrolle E1 – Gewitter</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap">
+<h1>Kontrolle E1: Gewitter</h1>
+<p class="sub">Löse zuerst alles auf deiner OneNote-Seite. Gib dann hier deine Antworten ein. Falsches verbesserst du auf der Seite in Grün.</p>
+<div class="material"><img src="img/gewitter.png" alt="Gewitterwolke: oben +, unten −, Boden +" width="300"></div>
+<div id="aufgaben"></div><div id="uebersicht"></div></div>
+<script src="engine.js"></script><script>
+starte({titel:"Kontrolle E1 Gewitter",aufgaben:[
+ {id:"a",nr:"a)",typ:"mc",text:"Die Unterseite der Wolke ist …",opts:["positiv geladen","negativ geladen","neutral"],richtig:1,
+  tipp:"Die Unterseite bekommt sehr viele Elektronen.",loesung:"Elektronenüberschuss = negativ."},
+ {id:"b",nr:"b)",typ:"mc",text:"Zwei Wolken ziehen nebeneinander. Beide Unterseiten sind negativ geladen. Die Wolken …",
+  opts:["ziehen sich an","stoßen sich ab","beeinflussen sich nicht"],richtig:1,tipp:"Gleiche oder ungleiche Ladungen?",loesung:"Gleiche Ladungen stoßen sich ab."},
+ {id:"c",nr:"c)",typ:"tab",text:"Beobachtung oder Erklärung?",spalten:["Beobachtung","Erklärung"],
+  zeilen:[["Es blitzt.",0],["Die Unterseite der Wolke hat Elektronenüberschuss.",1],["Es donnert.",0],["Beim Blitz springen Elektronen von der Wolke zum Boden.",1]],
+  tipp:"Beobachten = was man sieht oder hört. Erklären = was man nicht sehen kann (Elektronen, Ladungen)."},
+ {id:"d",nr:"d)",typ:"offen",text:"Den Boden hat niemand gerieben. Trotzdem wird er positiv. Erkläre.",
+  loesung:"Die Elektronen an der Unterseite der Wolke stoßen die Elektronen im Boden ab. Diese weichen ein Stück nach unten aus. An der Oberfläche fehlen dann Elektronen – der Boden ist dort positiv (Influenz)."},
+ {id:"e",nr:"e)",typ:"mc",text:"Nina sagt: „Der Papierschnipsel wird angezogen – also muss er geladen sein.“ Stimmt das?",
+  opts:["ja, immer","nein, nie","nur manchmal"],richtig:2,tipp:"Denk an die Influenz.",
+  loesung:"Ein Schnipsel kann geladen sein – aber auch ein neutraler Schnipsel wird angezogen, weil sich seine Ladungen verschieben."},
+ {id:"f",nr:"f)",typ:"offen",text:"Warum sammelt sich auf einem frisch abgewischten (geladenen) Bildschirm besonders viel Staub?",
+  loesung:"Die Staubkörner sind neutral, aber ihre Ladungen verschieben sich (Influenz). Die dem Bildschirm zugewandte Seite wird ungleich geladen und deshalb angezogen."}
+]});
+</script></body></html>
